@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Formulario</title>
+</head>
+<body>
+   <!--------------------------------CABEÇALHO----------------------------->
+  <div class="container">
+    <div class="header">
+      <h2>Criar Uma Conta</h2>
+    </div>
+    <!-----------------Name,Email,Password and Password Confirmation--------------->
+      <form id="form" class="form">
+        <div class="form-control ">
+            <label for="username">Nome de Usuário</label>
+            <input type="text" id="username" placeholder="Digite seu nome de usuário">
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Campo Inválido</small>
+        </div>
+        <div class="form-control ">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite seu Email">
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Campo Inválido</small>
+      </div>
+      <div class="form-control ">
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" placeholder="Digite seu Telefone">
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Campo Inválido</small>
+    </div>
+  <!-------------------------------------BUTTON------------------------------------>
+  <button type="submit">Enviar</button>
+      </form>
+  </div>
+  <script src="https://kit.fontawesome.com/ecfa95e8e6.js" crossorigin="anonymous"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>
