@@ -12,7 +12,7 @@ form.addEventListener("submit", (e) =>{
 
 function checkInputs(){
   const usernameValue = username.value;
-  const emailValue = username.value;
+  const emailValue = email.value;
   const telefoneValue = telefone.value;
 
 if(usernameValue === ""){
@@ -28,9 +28,11 @@ if(usernameValue === ""){
 } else {
   setSucessFor(email);
   }
+
+
   if(telefoneValue === ""){
     setErrorFor(telefone, "Campo obrigátorio.");
-} else if (!checkTelefone(telefoneValue)) {
+} else if (!checkPhone(telefoneValue)) {
   setErrorFor(telefone,"Por favor insira um telefone válido.");
 } else {
   setSucessFor(telefone);
@@ -57,8 +59,8 @@ function checkEmail(email) {
     email
   );
 }
-function checkTelefone(telefone){
-  return /^\\([0-9]{2}\\)((3[0-9]{3}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$/.test(
-    telefone
-  );
+function checkPhone (telefone) {
+  var number = new NumExp('^((1[1-9])|([2-9][0-9]))((3[0-9]{3}[0-9]{4})|(9[0-9]{3}[0-9]{5}))$'); 
+  return number.test(telefone);
 }
+checkPhone (telefone);
